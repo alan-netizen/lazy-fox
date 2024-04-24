@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Konversi Suhu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Konversi Suhu</h1>
+        <div class="toggle-container">
+            <label class="toggle-label" for="dark-mode-checkbox">
+                <input type="checkbox" id="dark-mode-checkbox" class="toggle-input">
+                <span class="toggle-slider round"></span>
+            </label>
+        </div>
+        
+        <form id="tempConverterForm" class="dark-mode-form">
+            <label for="temperature">Masukkan Suhu:</label>
+            <input type="number" id="temperature" name="temperature" required>
+            
+            <label for="unit">Pilih Satuan:</label>
+            <select id="unit" name="unit">
+                <option value="celsius">Celsius</option>
+                <option value="fahrenheit">Fahrenheit</option>
+            </select>
+            
+            <button type="submit">Konversi</button>
+        </form>
+        
+        <div id="conversionResult" class="result"></div>
+        
+        <div id="explanation" class="result"></div>
+    </div>
+    <script src="javascript.js"></script>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-content">
+                <h3>Contact Us</h3>
+                <p>Web: look@thestars.com</p>
+                <p>Phone: +666666</p>
+                <p>Made by Chasryn De Leanor</p>
+            </div>
+            <div class="footer-content">
+                <h3>Follow Us</h3>
+                <ul>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Instagram</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
